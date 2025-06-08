@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./ccs/Login.css">
+</head>
+<body>
+    <div class="container-boddy">
+        <div class="container">
+            <div class="container-video">
+                <video autoplay muted loop class="video-background">
+                    <source src="video-backgraund.mp4" type="video/mp4">
+                </video>
+                <p>Bienvenido a tu refugio perfecto.</p>
+            </div>
+        </div>
+    
+        <div class="container-form">
+            <h1>HESTIA - HOTEL</h1>
+            <h2>Welcome Back</h2>
+            <h4>Welcome back! Please enter your details</h4>
+    
+            <form action="login.php" method="POST">
+                <label for="username">User:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+    
+                <input type="submit" value="Sign In">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

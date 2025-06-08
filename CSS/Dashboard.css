@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #1C1A2E;
+  color: white;
+}
+
+.container {
+  display: flex;
+}
+
+
+.sidebar {
+  width: 220px;
+  background-color: #1C1A2E;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.menu button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.671);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: all 1s ease;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.menu button.active,
+.menu button:hover {
+  background-color: #6558d3;
+  color: white;
+}
+
+.menu button i {
+  margin-right: 10px;
+  font-size: 15px;
+  padding: auto;
+}
+
+.main {
+  margin-left: 225px; 
+  width: calc(100% - 225px);
+  padding: 20px;
+}
+
+.Main-Title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  height: 70px;
+}
+
+.Main-Title i {
+  font-size: 25px;
+  color: white ;
+  padding: auto;
+  margin: 24px 10px 0 1260px;
+  position: absolute;
+}
+
+.Main-Title i:hover {
+  color: black;
+  cursor: pointer;
+
+}
+
+
+.Welcome {
+  background-color: #444;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.User-Name {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+}
+
+.User-Name-p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.671);
+}
+
+.fa-solid {
+  font-size: 15px;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  background-color: #35325571;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.671);
+  margin: 0 10px;
+  
+}
+
+.section {
+  background-color: #1C1A2E;
+  border-radius: 15px;
+  padding: 20px;
+  height: 540px;
+  width: 100%;
+}
+
+
+.filter-btn{
+  background-color: #6558d3;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  float: right;
+  margin-top: 20px;
+  gap: 8px;
+  
+  }
+  
+/* Escritorios grandes (≥1600px) */
+@media (min-width: 1600px) {
+  .sidebar {
+    width: 260px;
+  }
+  
+  .main {
+    margin-left: 265px;
+    width: calc(100% - 265px);
+  }
+  
+  .menu button {
+    font-size: 16px;
+    padding: 14px;
+  }
+  
+  .filter-btn {
+    width: calc(20% - 16px);
+    height: 90px;
+    font-size: 15px;
+  }
+  
+  .Main-Title {
+    font-size: 28px;
+    display: flex;
+  }
+}
+
+/* Laptops medianas (1280px - 1599px) - Estilo por defecto ya aplicado */
+
+/* Laptops pequeñas (1024px - 1279px) */
+@media (max-width: 1279px) {
+  .sidebar {
+    width: 200px;
+  }
+  
+  .main {
+    margin-left: 205px;
+    width: calc(100% - 205px);
+  }
+  
+  .filter-btn {
+    width: calc(33.33% - 14px);
+    height: 85px;
+  }
+  
+  .User-Name, 
+  .User-Name-p {
+    display: none;
+  }
+}
+
+/* Laptops muy pequeñas (≤1023px) */
+@media (max-width: 1023px) {
+  .sidebar {
+    width: 180px;
+    padding: 15px;
+  }
+  
+  .main {
+    margin-left: 185px;
+    width: calc(100% - 185px);
+    padding: 15px;
+  }
+  
+  .logo {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .menu button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .filter-btn {
+    width: calc(50% - 10px);
+    height: 80px;
+    font-size: 13px;
+  }
+  
+  .Main-Title {
+    font-size: 22px;
+    display:flex ;
+  }
+}
